@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Please fill out from the below:</h1>
+
+    <form method="post">
+      <label for="name">Fullname</label><br />
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="email">Email</label><br />
+      <input type="email" id="email" name="email" required /><br />
+
+      <label for="password">Password</label><br />
+      <input type="password" id="password" name="password" required /><br />
+
+      <label for="age">Age</label><br />
+      <input type="number" id="age" name="age" required /><br />
+
+      <label for="phone">Phone</label><br />
+      <select name="phone">
+        <option value="077">077</option>
+        <option value="055">055</option>
+        <option value="051">051</option>
+        <option value="050">050</option>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          maxlength="7"
+          required
+        /></select
+      ><br />
+
+      <label for="color">Context color</label><br />
+      <input type="color" name="color" id="color" /><br />
+
+      <label for="gender">Gender</label><br />
+      <input type="radio" name="gender" id="male" required />
+      <label for="male">Male</label><br />
+      <input type="radio" name="gender" id="female" required />
+      <label for="female">Female</label><br />
+      <input type="radio" name="gender" id="other" required />
+      <label for="other">Other</label><br />
+
+      <input multiple type="file" name="file" id="file" required /><br />
+
+      <label for="message"
+        >General information about youself:(Minimum lenght:200)</label
+      ><br />
+      <textarea id="message" name="message" minlength="200" required></textarea
+      ><br />
+
+      <button type="menu">Submit</button>
+    </form>
+  </body>
+</html>
