@@ -10,51 +10,68 @@
     <h1>Please fill out from the below:</h1>
 
     <form method="post">
-      <label for="name">Fullname</label><br />
-      <input type="text" id="name" name="name" required /><br />
+      <label for="name">Fullname</label><br>
+      <input type="text" id="name" name="name" required /><br><br>
 
       <label for="email">Email</label><br />
-      <input type="email" id="email" name="email" required /><br />
+      <input type="email" id="email" name="email" required /><br><br>
 
-      <label for="password">Password</label><br />
-      <input type="password" id="password" name="password" required /><br />
+      <label for="password">Password</label><br>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required/>
+        <br><br>
 
-      <label for="age">Age</label><br />
-      <input type="number" id="age" name="age" required /><br />
+      <label for="age">Age</label><br>
+      <input type="number" id="age" name="age" required /><br><br>
 
-      <label for="phone">Phone</label><br />
+      <label for="phone">Phone</label><br>
       <select name="phone">
         <option value="077">077</option>
+        <option value="070">070</option>
         <option value="055">055</option>
         <option value="051">051</option>
         <option value="050">050</option>
+        <option value="099">099</option>
+        <option value="010">010</option>
+
         <input
           type="tel"
           id="phone"
           name="phone"
           maxlength="7"
-          required
-        /></select
-      ><br />
+          pattern="[0-9]{7}"
+          required/>
+      </select>
+      <br><br>
 
-      <label for="color">Context color</label><br />
-      <input type="color" name="color" id="color" /><br />
+      <label for="color">Context color</label><br>
+      <input type="color" name="color" id="color" required/><br><br>
 
-      <label for="gender">Gender</label><br />
+      <label for="gender">Gender</label><br>
       <input type="radio" name="gender" id="male" required />
-      <label for="male">Male</label><br />
+      <label for="male">Male</label><br>
       <input type="radio" name="gender" id="female" required />
-      <label for="female">Female</label><br />
+      <label for="female">Female</label><br>
       <input type="radio" name="gender" id="other" required />
-      <label for="other">Other</label><br />
+      <label for="other">Other</label><br><br>
 
-      <input multiple type="file" name="file" id="file" required /><br />
+      <input multiple type="file" name="file" id="file" required /><br><br>
 
       <label for="message"
-        >General information about youself:(Minimum lenght:200)</label
-      ><br />
-      <textarea id="message" name="message" minlength="200" required></textarea
-      ><br />
+        >General information about yourself:(Minimum lenght:200)</label>
+        <br>
+      <textarea
+        cols="55"
+        rows="8"
+        id="message"
+        name="message"
+        minlength="200"
+        required>
+        </textarea>
+        <br><br>
 
       <button type="menu">Submit</button>
     </form>
